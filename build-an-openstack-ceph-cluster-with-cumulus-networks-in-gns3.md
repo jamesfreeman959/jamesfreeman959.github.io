@@ -1,5 +1,5 @@
 ---
-layout: page
+#layout: page
 title: Build an OpenStack/Ceph Cluster with Cumulus Networks in GNS3
 permalink: /build-an-openstack-ceph-cluster-with-cumulus-networks-in-gns3/
 ---
