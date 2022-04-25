@@ -19,20 +19,30 @@
 # in the templates via {{ site.myvariable }}.
 
 title: James Freeman's Blog
-email: 
+author:
+  name: James Freeman
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to James Freeman's blog, the place to read musings, news and
   geeky articles from the author of Mastering Ansble, Practical Ansible 2
   and Hands On Enterprise Automation on Linux from Packt.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://jamesfreeman959.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jamesfreeman959
-github_username:  jamesfreeman959
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+minima:
+  social_links:
+    twitter: jamesfreeman959
+    github:  jamesfreeman959
+    linkedin: jamesfreeman959
 
 # Build settings
-theme: jekyll-theme-midnight
+#theme: minima
+#plugins:
+#  - jekyll-feed
+#remote_theme: jamesfreeman959/minima@v2.5.1
+remote_theme: jamesfreeman959/minima@69664442e5a45f631d5bccaba6d7978a91ce22c8
 plugins:
-  - jekyll-feed
+ - jekyll-remote-theme # add this line to the plugins list if you already have one
+ - jekyll-feed
+ - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,3 +63,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+google_analytics: G-70219D0QNR
